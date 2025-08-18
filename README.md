@@ -47,12 +47,55 @@ A Spring Boot REST API for managing clients, using MySQL as the database. Suppor
 - `compose.yaml` — Docker Compose file
 
 ## Useful Commands
-- Build: `./mvnw clean package -DskipTests`
-- Run: `./mvnw spring-boot:run`
-- Docker Compose: `docker compose up --build`
 
-## Notes
-- For Windows/WSL users: If running Docker Compose from WSL, use the WSL IP to connect to MySQL from Windows tools.
+## Authentication & Testing Endpoints
+
+### 1. Register a New User
+Send a POST request to `/auth/register` with JSON body:
+```json
+{
+  "username": "testuser",
+  "password": "testpass"
+}
+```
+Example using curl:
+```sh
+curl -X POST http://localhost:8080/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{"username":"testuser","password":"testpass"}'
+```
+
+### 2. Log In
+Send a POST request to `/auth/login` with the same credentials:
+```json
+{
+  "username": "testuser",
+  "password": "testpass"
+}
+```
+Example using curl:
+```sh
+curl -X POST http://localhost:8080/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"username":"testuser","password":"testpass"}'
+```
+The response will include a JWT token:
+```json
+{
+  "token": "<JWT_TOKEN>"
+}
+```
+
+### 3. Call Protected Endpoints
+Use the token in the `Authorization` header:
+```sh
+curl -X GET http://localhost:8080/clients/search \
+  -H "Authorization: Bearer <JWT_TOKEN>"
+```
+
+### 4. Swagger UI
+You can also use Swagger UI at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) to interact with endpoints. For protected endpoints, click "Authorize" and enter `Bearer <JWT_TOKEN>`.
+
 - The database data is persisted in a Docker volume (`db_data`).
 
 ## License
