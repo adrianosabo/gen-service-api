@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.i3v.server_api.dto.ClientDTO;
+import com.i3v.server_api.exception.ResourceNotFoundException;
 import com.i3v.server_api.repository.ClientRepository;
 
 import lombok.extern.slf4j.Slf4j;
@@ -31,4 +32,10 @@ public class ClientService {
 
 		return result;
 	}
+
+    public ClientDTO searchClientByName(String name) {
+        return clientRepository.findByName(name)
+            .map(client -> new ClientDTO(client.getId(), client.getName(), null))
+            .orElseThrow(() -> new ResourceNotFoundException("Client not found with name: " + name));
+    }
 }
