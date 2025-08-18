@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.i3v.server-api</groupId>
-	<artifactId>service</artifactId>
+	<artifactId>gen-service-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>service</name>
+	<name>gen-service-api</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
