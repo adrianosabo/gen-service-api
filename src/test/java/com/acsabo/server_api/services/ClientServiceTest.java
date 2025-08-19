@@ -1,9 +1,9 @@
-package com.i3v.server_api.services;
+package com.acsabo.server_api.services;
 
-import com.i3v.server_api.dto.ClientDTO;
-import com.i3v.server_api.entity.Client;
-import com.i3v.server_api.exception.ResourceNotFoundException;
-import com.i3v.server_api.repository.ClientRepository;
+import com.acsabo.server_api.dto.ClientDTO;
+import com.acsabo.server_api.entity.Client;
+import com.acsabo.server_api.exception.ResourceNotFoundException;
+import com.acsabo.server_api.repository.ClientRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

@@ -1,7 +1,7 @@
-package com.i3v.server_api.services;
+package com.acsabo.server_api.services;
 
-import com.i3v.server_api.entity.User;
-import com.i3v.server_api.repository.UserRepository;
+import com.acsabo.server_api.entity.User;
+import com.acsabo.server_api.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

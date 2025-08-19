@@ -1,6 +1,6 @@
-package com.i3v.server_api.config;
+package com.acsabo.server_api.config;
 
-import com.i3v.server_api.services.CustomUserDetailsService;
+import com.acsabo.server_api.services.CustomUserDetailsService;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

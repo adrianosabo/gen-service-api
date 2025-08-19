@@ -1,4 +1,4 @@
-package com.i3v.server_api.entity;
+package com.acsabo.server_api.entity;
 
 import jakarta.persistence.*;
 

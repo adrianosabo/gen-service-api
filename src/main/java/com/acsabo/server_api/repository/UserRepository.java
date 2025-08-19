@@ -1,6 +1,6 @@
-package com.i3v.server_api.repository;
+package com.acsabo.server_api.repository;
 
-import com.i3v.server_api.entity.User;
+import com.acsabo.server_api.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 

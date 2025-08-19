@@ -1,6 +1,6 @@
-package com.i3v.server_api.config;
+package com.acsabo.server_api.config;
 
-import com.i3v.server_api.services.CustomUserDetailsService;
+import com.acsabo.server_api.services.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

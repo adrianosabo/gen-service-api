@@ -1,12 +1,12 @@
 
-package com.i3v.server_api.controller;
+package com.acsabo.server_api.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 
-import com.i3v.server_api.dto.ClientDTO;
-import com.i3v.server_api.exception.ResourceNotFoundException;
-import com.i3v.server_api.services.ClientService;
+import com.acsabo.server_api.dto.ClientDTO;
+import com.acsabo.server_api.exception.ResourceNotFoundException;
+import com.acsabo.server_api.services.ClientService;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

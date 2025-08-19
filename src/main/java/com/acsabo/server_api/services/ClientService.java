@@ -1,4 +1,4 @@
-package com.i3v.server_api.services;
+package com.acsabo.server_api.services;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -6,9 +6,9 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.i3v.server_api.dto.ClientDTO;
-import com.i3v.server_api.exception.ResourceNotFoundException;
-import com.i3v.server_api.repository.ClientRepository;
+import com.acsabo.server_api.dto.ClientDTO;
+import com.acsabo.server_api.exception.ResourceNotFoundException;
+import com.acsabo.server_api.repository.ClientRepository;
 
 import lombok.extern.slf4j.Slf4j;
 

@@ -1,4 +1,4 @@
-package com.i3v.server_api.config;
+package com.acsabo.server_api.config;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

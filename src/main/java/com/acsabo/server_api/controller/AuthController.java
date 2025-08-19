@@ -1,8 +1,8 @@
-package com.i3v.server_api.controller;
+package com.acsabo.server_api.controller;
 
-import com.i3v.server_api.config.JwtUtil;
-import com.i3v.server_api.entity.User;
-import com.i3v.server_api.repository.UserRepository;
+import com.acsabo.server_api.config.JwtUtil;
+import com.acsabo.server_api.entity.User;
+import com.acsabo.server_api.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
