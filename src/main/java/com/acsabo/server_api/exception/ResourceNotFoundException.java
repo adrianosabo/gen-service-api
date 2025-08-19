@@ -1,4 +1,4 @@
-package com.i3v.server_api.exception;
+package com.acsabo.server_api.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
 

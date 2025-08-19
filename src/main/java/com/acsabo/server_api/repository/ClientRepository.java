@@ -1,6 +1,6 @@
-package com.i3v.server_api.repository;
+package com.acsabo.server_api.repository;
 
-import com.i3v.server_api.entity.Client;
+import com.acsabo.server_api.entity.Client;
 
 import java.util.Optional;
 

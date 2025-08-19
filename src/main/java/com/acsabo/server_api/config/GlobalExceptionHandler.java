@@ -1,11 +1,11 @@
-package com.i3v.server_api.config;
+package com.acsabo.server_api.config;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.i3v.server_api.exception.ResourceNotFoundException;
+import com.acsabo.server_api.exception.ResourceNotFoundException;
 
 import lombok.extern.slf4j.Slf4j;
 

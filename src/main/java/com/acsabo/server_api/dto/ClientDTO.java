@@ -1,4 +1,4 @@
-package com.i3v.server_api.dto;
+package com.acsabo.server_api.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
