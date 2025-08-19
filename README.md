@@ -42,7 +42,7 @@ A Spring Boot REST API for managing clients, using MySQL as the database. Suppor
 - Swagger UI: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 ## Project Structure
-- `src/main/java/com/i3v/server_api/` — Source code
+- `src/main/java/com/acsabo/server_api/` — Source code
 - `src/main/resources/` — Configurations
 - `compose.yaml` — Docker Compose file
 
