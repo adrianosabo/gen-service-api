@@ -97,6 +97,3 @@ curl -X GET http://localhost:8080/clients/search \
 You can also use Swagger UI at [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) to interact with endpoints. For protected endpoints, click "Authorize" and enter `Bearer <JWT_TOKEN>`.
 
 - The database data is persisted in a Docker volume (`db_data`).
-
-## License
-MIT
